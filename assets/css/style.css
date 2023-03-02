@@ -1,3 +1,12 @@
+:root{
+    --gray: rgb(207, 204, 214);
+    --umber: rgb(130,98,81);
+    --blue: rgb(0, 52, 89);
+    --mindaro: rgb(255,253,152);
+    --taupe: rgb(150,92,107);
+    
+}
+
 *{
     box-sizing: border-box;
 }
@@ -8,29 +17,30 @@ body{
 }
 
 header{
-    background-color: darkblue;
-    color: white;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-header h1{
-    font-size: 500%;
-    font-family: serif;
+    background-color: var(--blue);
+    color: var(--gray);
     
 }
 
-header div{
-    display: flex;
-    justify-content: space-between;
+header h1{
+    padding: 20px 0;
+    font-size: 500%;
+    font-family: serif;
+    text-align: center;
+    
+}
+
+header h3{
+    margin: 5px 0 50px 0;
+    font-size: 175%;
+    text-align: center;
 }
 
 header nav{
     font-family: 'Prata', serif;
     font-size: 200%;
     align-self: flex-end;
-    margin-right: 3%;
+    margin-right: 100px;
 }
 
 header nav ul{
@@ -44,19 +54,29 @@ header nav ul li{
 
 header nav ul li a{
     text-decoration: none;
-    color:lightyellow;
+    color: var(--taupe);
+}
+
+.head-container{
+    flex-basis: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .avatar{
     border-radius: 100%;
-    max-width: 15%;
-    margin-left: 3%;
+    max-width: 320px;
+    min-width: 100px;
+    margin-left: 100px;
+    padding: 20px;
 }
 
-/* main{
-    display: flex;
-    flex-wrap: wrap;
-} */
+
+.header-break{
+    background-color: var(--taupe);
+}
 
 h2{
     font-family: 'Prata', sans-serf;
