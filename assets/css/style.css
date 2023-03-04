@@ -50,6 +50,10 @@ header nav ul li a{
     color: var(--gray);
 }
 
+a:hover{
+    color: var(--mindaro);
+}
+
 .head-container{
     flex-basis: auto;
     display: flex;
@@ -129,6 +133,10 @@ header nav ul li a{
     z-index: 1;
 }
 
+.project img:hover{
+    opacity: 0.3;
+}
+
 #first-project{
     width:100%;
 }
@@ -146,6 +154,8 @@ header nav ul li a{
     display: inline-block;
     margin: 10px;
 }
+
+
 
 @media screen and (max-width: 768px){
     #about, 
@@ -200,6 +210,5 @@ header nav ul li a{
     #projects h2,
     #contact h2{
     font-size: 275%;
-}
-    
+    }
 }
